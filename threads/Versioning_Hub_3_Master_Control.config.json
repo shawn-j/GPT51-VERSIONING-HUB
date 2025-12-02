@@ -1,0 +1,115 @@
+{
+  "thread_template_version": "2025-12-01",
+  "thread_metadata": {
+    "thread_label": "Versioning_Hub_3_Master_Control",
+    "primary_goal": "Maintain and evolve the full versioned registry of prompts, configs, migrations, starter packs, and audit assets.",
+    "task_type": "meta_versioning_and_architecture",
+    "priority_level": "high",
+    "time_horizon": "long_term_project"
+  },
+  "niche_or_domain": {
+    "etsy_niche": "",
+    "product_format": [
+      "prompt_assets",
+      "starter_packs",
+      "migration_plans",
+      "registry_snapshots"
+    ],
+    "target_customer_use": [
+      "internal_system_maintenance",
+      "cross_thread_consistency"
+    ],
+    "pmf_status": "not_applicable",
+    "known_risks_or_red_flags": [
+      "configuration_drift_between_threads",
+      "outdated_version_ids",
+      "schema_drift",
+      "long_thread_context_corruption"
+    ]
+  },
+  "tools_and_env_for_this_thread": {
+    "local_tools": {
+      "comfyui_root_path": "/media/dma-pop/1TBnvme_LIN/C",
+      "comfyui_venv_path": "/media/dma-pop/1TBnvme_LIN/C/venv",
+      "uses_sdxl_comfyui": false,
+      "uses_gimp": false,
+      "uses_dalle_via_chatgpt": false,
+      "other_local_constraints": [
+        "PopOS_Linux",
+        "RTX_3060_12GB"
+      ]
+    },
+    "online_llms_in_play": {
+      "chatgpt_5_1_role": "primary_architect_and_registry_controller",
+      "grok_role": "optional_auditor",
+      "gemini_role": "not_used",
+      "claude_role": "optional_json_reviewer"
+    }
+  },
+  "artifacts_and_inputs": {
+    "existing_good_assets": [
+      "MASTER_PROMPT_v2025.12.1_JSON",
+      "BEST_PRACTICES_v2025.12.1_JSON",
+      "THREAD_CONFIG_GENERATOR_v2025.12.1_JSON"
+    ],
+    "inputs_user_will_provide": [
+      "asset_updates",
+      "migration_plans",
+      "starter_pack_requests"
+    ],
+    "expected_outputs_from_this_thread": [
+      "registry_updates",
+      "starter_packs_for_other_threads",
+      "formal_revision_logs",
+      "migration_assets"
+    ]
+  },
+  "constraints_for_this_thread": {
+    "busywork_tolerance": "low",
+    "ai_only_vs_manual": "AI_first_with_manual_review",
+    "file_and_platform_limits": [
+      "context_is_short-lived",
+      "threads_will_be_forked_often",
+      "no_external_storage_guarantees"
+    ],
+    "forbidden_or_deprecated_directions": [
+      "no_operational_tasks",
+      "no_running_etsy_work_or_crypto_work_in_this_thread",
+      "no_model_switching_without_revision",
+      "no_silent_changes"
+    ]
+  },
+  "current_locked_decisions": {
+    "primary_product_type": "meta_versioning_and_architecture",
+    "primary_theme": "multi_agent_ai_system_maintenance",
+    "primary_style_engine": "text_and_json_only",
+    "secondary_tooling_role": "external_llms_as_optional_reviewers",
+    "process_strategy": "store_and_update_versioned_docs_here_then_generate_starter_packs_for_operational_threads"
+  },
+  "workflow_outline": {
+    "phase_1": [
+      "load_registry_snapshot",
+      "identify_current_active_versions"
+    ],
+    "phase_2": [
+      "apply_revision_procedure_for_asset_changes",
+      "append_changelog_entries"
+    ],
+    "phase_3": [
+      "prepare_starter_packs",
+      "execute_or_schedule_migrations"
+    ]
+  },
+  "success_criteria": {
+    "hard_criteria": [
+      "all_asset_changes_logged_with_reason",
+      "no_untracked_versions",
+      "all_operational_threads_reference_latest_versions"
+    ],
+    "soft_criteria": [
+      "system_stays_stable",
+      "easy_to_expand",
+      "easy_to_fork_new_threads"
+    ]
+  }
+}
