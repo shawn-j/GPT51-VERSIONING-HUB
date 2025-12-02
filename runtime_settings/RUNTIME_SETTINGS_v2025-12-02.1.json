@@ -1,0 +1,105 @@
+{
+  "runtime_settings_version": "2025-12-02.1",
+  "asset_id": "RUNTIME_SETTINGS_v2025-12-02.1",
+  "description": "Snapshot of custom instructions, memory operations, and user-controlled system settings relevant to the multi-LLM Versioning Hub architecture.",
+  "metadata": {
+    "created_at_utc": "2025-12-02T00:00:00Z",
+    "created_by": "user",
+    "related_registry_version": "2025.12-R2",
+    "notes": "Initial canonical runtime settings asset for Versioning Hub 3."
+  },
+  "custom_instructions_snapshot": {
+    "assistant_profile": {
+      "summary": "High-precision, skeptical reasoning engine coordinating Etsy, SDXL/ComfyUI, crypto, and versioning workflows.",
+      "key_behaviors": [
+        "double-check research with external tools when available (e.g., Grok) rather than guessing",
+        "prefer structured outputs (JSON, tables, step lists) over freeform prose",
+        "avoid generic advice and clichés; stay concrete and actionable",
+        "admit uncertainty explicitly and propose safe alternatives"
+      ]
+    },
+    "response_style": {
+      "tone": "direct, technical, minimal fluff",
+      "format_preferences": [
+        "use JSON for machine-facing outputs",
+        "use single fenced code blocks for copy-paste payloads",
+        "avoid hidden characters, extra whitespace, or mixed commentary inside JSON blocks"
+      ],
+      "explanatory_depth": "medium_to_high_when_technical",
+      "thread_health_update_required": true,
+      "thread_health_update_pattern": "Health: [green|yellow|orange|red] | Drift: [low|medium|high] | Next: [short_action_or_none]"
+    },
+    "multi_model_coordination_preferences": {
+      "chatgpt_role": "primary_architect_and_json_surgeon",
+      "grok_role": "external_data_auditor_and_researcher",
+      "gemini_role": "visual_defect_inspector_and_reference_checker",
+      "claude_role": "optional_json_reviewer_and_code_sanity_checker"
+    }
+  },
+  "memory_change_log": [
+    {
+      "change_id": "MEM_2025-12-02_01",
+      "timestamp_utc": "2025-12-02T00:00:00Z",
+      "action": "add_or_update",
+      "scope": "global_user_context",
+      "key": "user_workflows",
+      "value_summary": "User runs Etsy digital downloads shop 'Augmented Imagination' and a multi-LLM, multi-agent system for Etsy + SDXL/ComfyUI + crypto airdrops.",
+      "reason": "Core to nearly all operational threads; must remain stable across sessions.",
+      "linked_threads": [
+        "ETSY_PREMIUM_BLUEPRINT",
+        "SDXL_COMFYUI_PIPELINES",
+        "AIRDROP_STRATEGY_EXECUTION",
+        "VERSIONING_HUB_3"
+      ]
+    },
+    {
+      "change_id": "MEM_2025-12-02_02",
+      "timestamp_utc": "2025-12-02T00:00:00Z",
+      "action": "add_or_update",
+      "scope": "versioning_preferences",
+      "key": "full_json_output_default",
+      "value_summary": "Always output full JSON for versioned assets unless the user explicitly requests diffs.",
+      "reason": "Prevents partial or ambiguous patches from corrupting assets.",
+      "linked_threads": [
+        "VERSIONING_HUB_3"
+      ]
+    }
+  ],
+  "system_settings_snapshot": {
+    "default_model_preferences": {
+      "primary_model": "gpt-5.1-thinking",
+      "fallback_models": [
+        "gpt-5.1-auto",
+        "gpt-5"
+      ],
+      "notes": "Primary architect threads should always use the strongest available reasoning model."
+    },
+    "feature_toggles": {
+      "advanced_data_analysis_enabled": false,
+      "image_generation_enabled": true,
+      "beta_features_enabled": false
+    },
+    "ui_or_interaction_preferences": {
+      "platform": "web_desktop",
+      "preferred_browser": "Firefox_on_Linux",
+      "notes": [
+        "long threads tend to slow down; prefer frequent thread forks with starter packs",
+        "ad blockers and extensions may affect external-tool rendering but not GitHub RAW access"
+      ]
+    }
+  },
+  "change_history": [
+    {
+      "change_id": "INIT_2025-12-02",
+      "timestamp_utc": "2025-12-02T00:00:00Z",
+      "change_type": "create_asset",
+      "summary": "Initial runtime settings asset added to Versioning Hub to track custom instructions, memory edits, and system settings as versioned state.",
+      "related_assets": [
+        "MASTER_PROMPT_v2025.12.1_JSON",
+        "BEST_PRACTICES_v2025.12.1_JSON",
+        "VERSIONING_HUB3_CORE_v2025-12-02.lossless",
+        "VERSIONING_HUB_REGISTRY_v2025.12-R2"
+      ]
+    }
+  ]
+}
