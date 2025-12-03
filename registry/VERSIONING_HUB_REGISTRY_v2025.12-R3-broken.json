@@ -1,5 +1,5 @@
 {
-  "registry_version": "2025.12-R3",
+  "registry_version": "2025.12-R3-broken",
   "active_versions": {
     "master_prompt": "MASTER_PROMPT_v2025.12.1_JSON",
     "thread_template": "THREAD_TEMPLATE_v2025.12_JSON",
